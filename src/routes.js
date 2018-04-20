@@ -5,13 +5,11 @@ import Dashboard from './component/Dashboard/Dashboard'
 import Form from './component/Form/Form'
 import Post from './component/Post/Post'
 
-export default function Routes() {
-  return (
-    <Switch>
-      <Route exact path='/' component={Auth} />
-      <Route path='/dashboard' component={Dashboard} />
-      <Route path='/post/:postid' component={Post} />
-      <Route path='new' component={Form} />
-    </Switch>
-  )
-}
+export default (
+  <Switch>
+    <Route exact path='/' component={Auth} />
+    <Route path='/dashboard' component={Dashboard} />
+    <Route path='/post/:postid' component={Post} />
+    <Route path='new' component={Form} />
+  </Switch>
+)

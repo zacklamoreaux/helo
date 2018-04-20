@@ -23,6 +23,10 @@ app.use(session({
   saveUninitialized: true
 }))
 
+app.post('/api/auth/register', (req, res) => {
+  
+})
+
 app.listen(SERVER_PORT, () => {
   console.log(`Listening on port: ${SERVER_PORT}`)
 })

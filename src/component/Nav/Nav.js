@@ -1,12 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 export function Nav() {
   return (
     <div>
-      <button>Home</button>
+      <Link to='/dashboard'>
+        <button>Home</button>
+      </Link>
+      <Link to='/post'>
       <button>New Post</button>
+      </Link>
+      <Link to ='/auth'>
       <button>Logout</button>
+      </Link>
     </div>
   )
 }
