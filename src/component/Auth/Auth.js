@@ -29,7 +29,9 @@ export default class Auth extends Component {
       <div>
         <input type='text' onChange={ this.handleUsernameChange } />
         <input type='text' onChange={ this.handlePasswordChange } />
+        <a href='http://localhost:3000/#/dashboard'>
         <button>Login</button>
+        </a>
         <button>Register</button>
       </div>
     )

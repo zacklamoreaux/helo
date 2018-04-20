@@ -7,7 +7,7 @@ export default class Dashboard
     return (
       <div>
         <Nav />
-        Dashboard
+        <button>Logout</button>
       </div>
     )
   }
